@@ -1,0 +1,55 @@
+.tasks {
+  :hover :last-child {
+    display: block;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  &__header {
+    margin-top: 0px;
+    display: flex;
+  }
+
+  &__card {
+    margin-top: -25px;
+    display: flex;
+    gap: 5px;
+
+    :first-child {
+      width: 200px;
+      border: 0.1px gray solid;
+      background-color: white;
+      height: 28px;
+
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+
+      border-radius: 5px;
+
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    :last-child {
+      border: 0.1px gray solid;
+      border-radius: 5px;
+      width: 40px;
+      text-align: center;
+
+      height: 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      display: none;
+    }
+  }
+}
